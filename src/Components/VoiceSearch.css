@@ -1,0 +1,26 @@
+/* Auto-suggestion list */
+.list-group {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #ced4da #f8f9fa; /* Firefox: thumb and track */
+}
+
+/* Chrome, Edge, Safari */
+.list-group::-webkit-scrollbar {
+  width: 8px; /* scrollbar width */
+}
+
+.list-group::-webkit-scrollbar-track {
+  background: #f8f9fa; /* lighter track */
+  border-radius: 4px;
+}
+
+.list-group::-webkit-scrollbar-thumb {
+  background-color: #ced4da; /* thumb color */
+  border-radius: 4px;
+  border: 2px solid #f8f9fa; /* padding around thumb */
+}
+
+/* Optional: hover effect */
+.list-group::-webkit-scrollbar-thumb:hover {
+  background-color: #adb5bd;
+}

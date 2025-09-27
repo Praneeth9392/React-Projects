@@ -1,0 +1,25 @@
+.nonveg-items{
+ padding-top: 200px;
+}
+.card {
+  transition: all 0.2s ease;
+  border-style: none;
+
+}
+
+.card:hover {
+  transform: scale(1.03);
+  /* border: 1px solid grey; */
+  box-shadow: 2px 8px 10px rgba(0,0,0,0.1);
+   /* background: linear-gradient(to bottom, #cef7cf,  rgb(255, 255, 255)); */
+  cursor: pointer;
+}
+
+
+.pagination{
+  text-align: center;
+}
+.pagination > button {
+  text-align: center;
+   
+}

@@ -1,0 +1,189 @@
+.cart{
+    margin-top: 150px;
+    /* position: absolute; */
+}
+/* .coupon{
+  top: 30%;
+  margin-left: 82%;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid green;
+} */
+.cart-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    /* padding: 50px; */
+}
+.products{
+  max-height: 500px;   
+  overflow-y: auto;    /* vertical scroll only */
+  padding-right: 5px;  /* space for scrollbar */
+  /* margin-top: -170px; */
+  padding: 5px;
+}
+.discount{
+    padding: 50px 30px;
+    margin-top: 20px;
+    height: 600px;
+    width: 400px;
+    /* display: block; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color:rgb(255, 255, 255);
+}
+
+
+/* COUPON CODE */
+.coupon-section {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.coupon-input {
+  border-radius: 8px 0 0 8px !important;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 0.95rem;
+}
+
+.coupon-btn {
+  border-radius: 0 8px 8px 0 !important;
+  font-weight: bold;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.coupon-btn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+}
+
+.coupon-popup {
+  position: fixed;
+  top: 150px;
+  right: -300px; /* start off-screen */
+  background: #198754;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 9999;
+  animation: slideInOut 2.5s ease-in-out forwards;
+}
+
+@keyframes slideInOut {
+  0% {
+    right: -300px;
+    opacity: 0;
+  }
+  20% {
+    right: 20px;
+    opacity: 1;
+  }
+  70% {
+    right: 20px;
+    opacity: 1;
+  }
+  100% {
+    right: -300px; /* smooth slide out */
+    opacity: 0;
+  }
+}
+
+/* email checkouts */
+.checkout-box {
+  margin-top: 30px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.checkout-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkout-input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-input:focus {
+  border-color: #198754;
+  box-shadow: 0 0 4px rgba(25, 135, 84, 0.3);
+}
+
+.btn-checkout {
+  background: #198754;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-checkout:hover {
+  background: #157347;
+}
+
+.btn-checkout:active {
+  transform: scale(0.97);
+}
+
+
+/* payment methods */
+.payment-methods {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.payment-methods h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.payment-btn:hover {
+  background: #007bff;
+  color: black;
+  transform: scale(1.03);
+}
+
+
+
+
+
+
