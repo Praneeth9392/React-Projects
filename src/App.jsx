@@ -16,7 +16,7 @@ import Desserts from "./Components/Desserts";
 import { useState } from "react";
 import ProductDetails from "./Components/ProductDetails";
 import SignIn from "./Components/SignIn";
-import Signup from "./Components/Signup";
+import Signup from "./Components/SignUp";
 
 import VoiceSearch from "./Components/VoiceSearch";  // 
 import { logoutUser } from "./store";
