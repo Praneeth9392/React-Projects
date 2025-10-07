@@ -17,7 +17,7 @@ function Aboutus() {
         <h3><strong>Our Commitment to Excellence</strong></h3>
     <div className="row g-4">
 
-      <div className="col-sm-3">
+      <div className="col-12 col-sm-6 col-md-3">
         <div className="card h-100 text-center">
           <img src="/images/dine-in.jpg" className="card-img-top" alt="Dine-In" />
           <div className="card-body">
@@ -29,7 +29,7 @@ function Aboutus() {
         </div>
       </div>
 
-      <div className="col-sm-3">
+     <div className="col-12 col-sm-6 col-md-3">
         <div className="card h-100 text-center">
           <img src="/images/delivery.jpg" className="card-img-top" alt="Home Delivery" />
           <div className="card-body">
@@ -41,7 +41,7 @@ function Aboutus() {
         </div>
       </div>
 
-      <div className="col-sm-3">
+     <div className="col-12 col-sm-6 col-md-3">
         <div className="card h-100 text-center">
           <img src="/images/takeaway.jpg" className="card-img-top" alt="Takeaway" />
           <div className="card-body">
@@ -53,7 +53,7 @@ function Aboutus() {
         </div>
       </div>
 
-      <div className="col-sm-3">
+     <div className="col-12 col-sm-6 col-md-3">
         <div className="card h-100 text-center">
           <img src="/images/catering.jpg" className="card-img-top" alt="Catering Service" />
           <div className="card-body">
@@ -74,19 +74,17 @@ function Aboutus() {
     <div className="aboutus ">
 
         {/* chef with text top */}
-        <div className=" container top-section d-flex align-items-center justify-content-center mt-5 pt-5 aboutUs-section2">
-          {/* Image */}
-         <div className="aboutus-container position-relative">
-          <div className="aboutus-img me-5">
-            <img src="images/about-main-img.jpg" alt="About Us" className="rounded main-img" />
+        <div className="container top-section row align-items-center mt-5 pt-5 aboutUs-section2">
+         {/* Image */}
+          <div className="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+            <div className="aboutus-container position-relative">
+              <img src="images/about-main-img.jpg" alt="About Us" className="rounded main-img img-fluid" />
+              <img src="clientImages/flower.png" alt="Flower" className="flower autoRotate" />
+            </div>
           </div>
 
-          <img src="clientImages/flower.png" alt="Flower" className="flower autoRotate" />
-        </div>
-
-
           {/* Text */}
-          <div className="aboutUs-text">
+         <div className="col-12 col-md-6">
             <h1 className="about-heading">
               ABOUT 
             </h1>
@@ -110,28 +108,29 @@ function Aboutus() {
 
       {/* bottom section */}
       
-       <div className="bottom-section d-flex align-items-start ">
-          <p className="about-para">
-            Welcome to <strong>Zomo</strong>, your one-stop destination for delicious, authentic, and freshly prepared food. 
-            Our mission is simple — to bring people together through flavors that speak to the heart. 
-            From quick bites to hearty meals, we focus on quality, freshness, and a memorable dining experience.  
-          </p>
+   <div className="bottom-section d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-center text-center text-md-start">
+        
+  <p className="about-para mx-2">
+    Welcome to <strong>Zomo</strong>, your one-stop destination for delicious, authentic, and freshly prepared food. 
+    Our mission is simple — to bring people together through flavors that speak to the heart. 
+    From quick bites to hearty meals, we focus on quality, freshness, and a memorable dining experience.  
+  </p>
 
-          <p className="about-para">
-            What makes us different? Every recipe at Zomo is carefully crafted using locally sourced ingredients 
-            and traditional cooking methods. We combine passion with innovation, ensuring that every dish 
-            not only satisfies your taste buds but also tells a story of culture, love, and care.  
-          </p>
+  <p className="about-para mx-2">
+    What makes us different? Every recipe at Zomo is carefully crafted using locally sourced ingredients 
+    and traditional cooking methods. We combine passion with innovation, ensuring that every dish 
+    not only satisfies your taste buds but also tells a story of culture, love, and care.  
+  </p>
 
-          
-          <div className="w-30 p-3 text-center">
-            <img 
-              src="/clientImages/aboutimg.jpg" 
-              alt="About Us" 
-              className="img-fluid rounded shadow" 
-            />
-          </div>
-       </div> 
+  <div className="text-center mt-3 mt-md-0 mx-2">
+    <img
+      src="/clientImages/aboutimg.jpg"
+      alt="About Us"
+      className="img-fluid rounded shadow"
+    />
+  </div>
+    </div>
+
        
 
     </div>

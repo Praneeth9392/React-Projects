@@ -1,4 +1,5 @@
-/* ✅ Base reset */
+
+/* Base reset */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
 }
 
 /* ✅ Fixed header */
+
 .header {
   position: fixed;
   top: 0;

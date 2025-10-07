@@ -87,9 +87,10 @@
 }
 .autoSlide{
         animation: autoSlideAnimation;
+        /* animation-timeline: view(); */
         animation-timeline: view();
     }
-    @keyframes autoSlideAnimation {
+ @keyframes autoSlideAnimation {
         from{
             opacity: 0.8;
             transform: translateY(150px);
@@ -320,13 +321,11 @@
   }
 
  .aboutUs-img img {
-  width: 100%;      /* image will fill the container width */
-  max-width: 600px; /* maximum width */
-  height: 680px;     /* maintain aspect ratio */
-
-  display: block;   /* remove inline spacing */
-  margin: 0 auto;   /* center the image */
-  border-radius: 8px; /* optional: rounded corners */
+        width: 100%;
+        max-width: 900px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
 }
 
 

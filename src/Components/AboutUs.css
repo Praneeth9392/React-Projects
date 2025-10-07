@@ -1,9 +1,13 @@
+html, body {
+  overflow-x: hidden !important;
+}
+
 .about{
   padding-top: 200px;
   background-color: rgb(252, 251, 251);
 }
 .aboutus >.aboutUs-section2{
-  background-color: white;
+  /* background-color: white; */
   border-radius: 1rem;
 }
 .main-bg {
@@ -59,10 +63,10 @@
   color: grey;
 }
 
-.autoRotate{
-  animation: rotation;
-  animation-timeline: view();
+.autoRotate {
+  animation: rotation 6s linear infinite;
 }
+
 @keyframes rotation {
   from{
      transform: rotate(0deg);
@@ -73,5 +77,108 @@
   
 }
 
-/* chefs */
+/* Responsive About Page */
+@media (max-width: 768px) {
+ .main-img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 380px;
+}
 
+
+  .flower {
+    width: 180px !important;
+    top: -60px !important;
+    left: -40px !important;
+    opacity: 0.6;
+  }
+
+  
+
+  
+}
+
+
+@media (max-width: 576px) {
+  .card-body h4 {
+    font-size: 16px;
+  }
+  .card-body p {
+    font-size: 13px;
+  }
+
+   .flower {
+    width: 180px;
+    top: -40px;
+    left: -30px;
+  }
+}
+
+@media (max-width: 576px) {
+    .aboutus, .services, .chefs, .bottom-section, .top-section, .container, .row {
+        overflow-x: hidden !important;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+  body, html {
+    overflow-x: hidden !important;
+  }
+
+  .services {
+    /* padding: 1.5rem !important; reduce p-5 padding on phones */
+    margin: 0rem !important;    /* reduce m-5 margin */
+  }
+
+  .services .card img {
+    height: auto;
+    max-width: 100%;
+  }
+
+ .about-description {
+        font-size: 0.9rem;
+         text-align: justify;
+          width: 80%; 
+    }
+
+    .us{
+      color: greenyellow ;
+    }
+  .about-para {
+    width: 80%;       /* full width on small screens */
+    padding-top: 12px;
+    margin: 0 auto;   /* center horizontally */
+    text-align: justify;
+  }
+
+  .bottom-section {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+.chefs {
+        overflow-x: hidden !important;  /* prevent horizontal scroll */
+        padding: 2rem 1rem !important;  /* reduce padding on mobile */
+        margin: 0 auto !important;      /* center content */
+    }
+
+    .chefs .row {
+        flex-direction: column !important; /* stack chef cards vertically */
+        gap: 1.5rem;                       /* spacing between cards */
+    }
+
+    .chefs .card {
+        width: 100% !important;            /* make cards full width */
+        text-align: center;                 /* center content */
+    }
+
+    .chefs .card img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}

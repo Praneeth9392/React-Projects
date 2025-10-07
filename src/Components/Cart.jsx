@@ -139,8 +139,8 @@ function Cart() {
                   <img
                     src="\images/empty-shopping-cart.jpg"
                     alt="Empty cart"
-                    className="img-fluid mt-2"
-                    style={{ maxWidth: "500px" }}
+                    className="img-fluid mt-2 empty-cart-img"
+                   
                   />
              </div>
     

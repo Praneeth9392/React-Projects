@@ -99,6 +99,7 @@ function Home(){
               </div>
             </div>
           </div>
+          
 
           {/* Non-Veg */}
           <div className="col-6 col-md-3">
