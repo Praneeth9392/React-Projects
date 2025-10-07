@@ -1,7 +1,7 @@
 import React from 'react'
 import './ContactUs.css';
 
-function Contactus() {
+function ContactUs() {
   return (
     <>
     <div className='contact-us'>
@@ -173,4 +173,4 @@ function Contactus() {
   )
 }
 
-export default Contactus
+export default ContactUs

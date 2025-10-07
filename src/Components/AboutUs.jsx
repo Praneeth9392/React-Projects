@@ -3,7 +3,7 @@ import './AboutUs.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
-function Aboutus() {
+function AboutUs() {
   return (
     <>
     <div className="about">
@@ -301,4 +301,4 @@ function Aboutus() {
   )
 }
 
-export default Aboutus
+export default AboutUs
