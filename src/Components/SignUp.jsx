@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { registeredUsers } from "../store";
 
 
-function Signup() {
+function SignUp() {
   let navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -134,4 +134,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default SignUp;
