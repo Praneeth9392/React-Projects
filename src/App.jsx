@@ -19,7 +19,7 @@ import Signup from "./Components/SignUp";
 
 import VoiceSearch from "./Components/VoiceSearch";  // 
 import { logoutUser } from "./store";
-import AboutUs from "./Components/Aboutus";
+import AboutUs from "./Components/AboutUs";
 
 function App() {
 
