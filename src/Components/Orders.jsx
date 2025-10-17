@@ -106,6 +106,7 @@ function Orders() {
 
   return (
     <div className="container-fluid orders-container mt-5 pt-5">
+
       <h1 className="orders-title">📦 Your Orders</h1>
 
       {orders.length === 0 ? (
@@ -156,12 +157,12 @@ function Orders() {
                         className="order-item d-flex justify-content-between align-items-start p-3 border rounded mb-3 list-hover"
                       >
                         {/* Left side: image + name */}
-                        <div className="d-flex flex-column align-items-center me-3">
+                        <div className="d-flex flex-column align-items-center justify-content-center m-3">
                           <img
                             src={item.imageurl}
                             alt={item.name}
                             className="item-image rounded"
-                            style={{ width: "80px", height: "80px", objectFit: "cover", marginBottom: "5px" }}
+                            style={{ width: "150px", height: "100px", objectFit: "cover", marginBottom: "5px", borderRadius: "16px" }}
                           />
                           <p className="item-name fw-bold text-center mb-0">{item.name}</p>
                         </div>

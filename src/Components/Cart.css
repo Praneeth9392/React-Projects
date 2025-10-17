@@ -1,6 +1,18 @@
 .cart{
     margin-top: 150px;
     /* position: absolute; */
+   animation: animatorCart 2s ease-in-out;
+}
+@keyframes animatorCart {
+    from{
+        opacity: 0.8;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  
 }
 /* .coupon{
   top: 30%;

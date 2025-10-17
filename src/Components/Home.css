@@ -6,6 +6,18 @@
     justify-content: space-around;
     gap: 60px;
     /* overflow-x: hidden; */
+    animation: animator 2s ease-in-out;
+}
+@keyframes animator {
+    from{
+        opacity: 0.8;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  
 }
 .image > img {
   height: 650px;
@@ -85,22 +97,21 @@
   width: 530px;
  filter: drop-shadow(0 20px 12px rgba(0, 0, 0, 0.5));  
 }
-.autoSlide{
-        animation: autoSlideAnimation;
-        /* animation-timeline: view(); */
-        animation-timeline: view();
-    }
- @keyframes autoSlideAnimation {
-        from{
-            opacity: 0.8;
-            transform: translateY(150px);
-            animation-range: entry 20% cover 100vh;
-        }
-        to{
-           opacity: 1;
-            transform: translateY(0px);
-        }
-    }
+
+
+.autoSlide {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.autoSlide.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
     /* carousel */
 .profile-card {

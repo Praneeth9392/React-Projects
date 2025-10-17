@@ -32,7 +32,7 @@ function SignUp() {
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 bg-light mt-4 pt-4">
-      <div className="card shadow-lg p-4 rounded-4" style={{ width: "400px" }}>
+      <div className="card shadow-lg p-4 rounded-4" style={{ width: "300px" }}>
         <h2 className="text-center  mb-4 fw-bolder">Sign Up</h2>
 
         <form onSubmit={handleSubmit(handleSignUp)}>

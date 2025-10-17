@@ -92,15 +92,20 @@ function VoiceSearch({ products, searchProduct, setSearchProduct }) {
       {/* Auto-suggestions */}
       {searchProduct && (
         <ul
-          className="list-group position-absolute w-100 shadow mt-1 overflow-auto"
+          className="list-group position-absolute w-100 shadow mt-1 overflow-auto voice-suggestion-list"
           style={{ zIndex: 1000, maxHeight: "250px" }}
         >
+
           {filterData.length > 0 ? (
             filterData.map((item) => (
               <li
                 key={item.id}
                 className="list-group-item "
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", 
+                  display: "block", 
+                  alignItems: "center",
+                  justifyContent:"space-around"
+                 }}
                 onClick={() => {
                   navigate(`/product/${item.id}`);
                   setTimeout(() => setSearchProduct(""), 200);
@@ -113,7 +118,7 @@ function VoiceSearch({ products, searchProduct, setSearchProduct }) {
                     width: "30px",
                     height: "30px",
                     objectFit: "cover",
-                    marginRight: "10px",
+                    marginRight: "30px",
                     borderRadius: "5px",
                   }}
                 />

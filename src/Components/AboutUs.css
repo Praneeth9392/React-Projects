@@ -5,11 +5,28 @@ html, body {
 .about{
   padding-top: 200px;
   background-color: rgb(252, 251, 251);
+     animation: animatorAbout 2s ease-in-out;
+}
+@keyframes animatorAbout {
+    from{
+        opacity: 0.8;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  
 }
 .aboutus >.aboutUs-section2{
   /* background-color: white; */
   border-radius: 1rem;
 }
+
+ .us{
+      color: greenyellow ;
+      font-weight: 800;
+    }
 .main-bg {
   position: relative;           /* for overlay positioning */
   background-image: url("/images/aboutimg.jpg");

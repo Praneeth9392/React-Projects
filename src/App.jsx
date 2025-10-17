@@ -5,7 +5,6 @@ import NonVeg from "./Components/NonVeg";
 import Drinks from "./Components/Drinks";
 import Cart from "./Components/Cart";
 import Orders from "./Components/Orders";
-import Aboutus from "./Components/AboutUs";
 import Contactus from "./Components/ContactUs";
 import FileNotFound from "./Components/FileNotFound";
 import { useDispatch, useSelector } from "react-redux";
@@ -20,6 +19,7 @@ import Signup from "./Components/SignUp";
 
 import VoiceSearch from "./Components/VoiceSearch";  // 
 import { logoutUser } from "./store";
+import AboutUs from "./Components/Aboutus";
 
 function App() {
 
@@ -117,6 +117,7 @@ let dispatch = useDispatch();
               aria-controls="zomoNavbar"
               aria-expanded="false"
               aria-label="Toggle navigation"
+
             >
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -193,7 +194,7 @@ let dispatch = useDispatch();
         <Route path="/desserts" element={<Desserts />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/orders" element={<Orders />} />
-        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/signUp" element={<Signup />} />

@@ -24,3 +24,32 @@
 .list-group::-webkit-scrollbar-thumb:hover {
   background-color: #adb5bd;
 }
+
+
+
+/* Make suggestion dropdown more touch-friendly on mobile */
+@media (max-width: 576px) {
+  .voice-suggestion-list {
+    max-height: 250px;
+    font-size: 0.9rem;
+    z-index: 99999;
+    position: fixed;
+  }
+
+  .voice-suggestion-list li {
+    padding: 8px 10px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .voice-suggestion-list img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .input-group {
+    width: 100% !important;
+  }
+}

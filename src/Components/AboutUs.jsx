@@ -13,7 +13,7 @@ function AboutUs() {
   
           {/* OUR SERVICES */}
       <div className="container services m-5 p-5">
-        <h6 className='text-success'>our services</h6>
+        <h6 className='text-success fs-2'>our services</h6>
         <h3><strong>Our Commitment to Excellence</strong></h3>
     <div className="row g-4">
 

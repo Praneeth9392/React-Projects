@@ -59,6 +59,29 @@ function Home(){
 
 
 
+useEffect(() => {
+  const elements = document.querySelectorAll(".autoSlide");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
+
+
+
+
+
  
     return(
 
@@ -91,7 +114,7 @@ function Home(){
       </p>
      <div className="row m-4 autoSlide justify-content-center g-3">
           {/* Veg */}
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-3" onClick={() => navigate('/veg')}>
             <div className="cardd bg-secondary h-100 text-center p-4">
               <img src="/images/varties-veg.jpg" alt="Veg" className="img-fluid mx-auto d-block" />
               <div className="card-body">
@@ -102,7 +125,7 @@ function Home(){
           
 
           {/* Non-Veg */}
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-3" onClick={() => navigate('/nonveg')}>
             <div className="cardd bg-secondary h-100 text-center p-4">
               <img src="/images/varties-non-veg.jpg" alt="Non-Veg" className="img-fluid mx-auto d-block" />
               <div className="card-body">
@@ -112,7 +135,7 @@ function Home(){
           </div>
 
           {/* Drinks */}
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-3" onClick={() => navigate('/drinks')}>
             <div className="cardd bg-secondary h-100 text-center p-4">
               <img src="/images/varties-drink.jpg" alt="Drinks" className="img-fluid mx-auto d-block" />
               <div className="card-body">
@@ -122,7 +145,7 @@ function Home(){
           </div>
 
           {/* Desserts */}
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-3" onClick={() => navigate('/desserts')}>
             <div className="cardd bg-secondary h-100 text-center p-4">
               <img src="/images/varties-desserts.jpg" alt="Desserts" className="img-fluid mx-auto d-block" />
               <div className="card-body">
